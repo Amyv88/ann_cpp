@@ -1,0 +1,50 @@
+\doxysection{src/activation.cu File Reference}
+\hypertarget{activation_8cu}{}\label{activation_8cu}\index{src/activation.cu@{src/activation.cu}}
+{\ttfamily \#include "{}activation.\+cuh"{}}\newline
+{\ttfamily \#include "{}error\+\_\+checking.\+cuh"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{Re\+Lu\+Kernel}} (float \texorpdfstring{$\ast$}{*}input, const int size)
+\item 
+\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{void}} \mbox{\hyperlink{activation_8cu_aebfe221e2de45d7893028fccdb2608f9}{Log\+Softmax\+Kernel}} (\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{const}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{output\+\_\+size}}, \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{const}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{batch\+\_\+size}}, \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{float}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{values}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{activation_8cu_aebfe221e2de45d7893028fccdb2608f9}\label{activation_8cu_aebfe221e2de45d7893028fccdb2608f9} 
+\index{activation.cu@{activation.cu}!LogSoftmaxKernel@{LogSoftmaxKernel}}
+\index{LogSoftmaxKernel@{LogSoftmaxKernel}!activation.cu@{activation.cu}}
+\doxysubsubsection{\texorpdfstring{LogSoftmaxKernel()}{LogSoftmaxKernel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{void}} Log\+Softmax\+Kernel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{const}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}}}]{output\+\_\+size,  }\item[{\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{const}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}}}]{batch\+\_\+size,  }\item[{\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{float}} \texorpdfstring{$\ast$}{*}}]{values }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{activation_8cu_aebfe221e2de45d7893028fccdb2608f9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{activation_8cu_a1d392980b831e51a4ccab5747d31acef}\label{activation_8cu_a1d392980b831e51a4ccab5747d31acef} 
+\index{activation.cu@{activation.cu}!ReLuKernel@{ReLuKernel}}
+\index{ReLuKernel@{ReLuKernel}!activation.cu@{activation.cu}}
+\doxysubsubsection{\texorpdfstring{ReLuKernel()}{ReLuKernel()}}
+{\footnotesize\ttfamily void Re\+Lu\+Kernel (\begin{DoxyParamCaption}\item[{float \texorpdfstring{$\ast$}{*}}]{input,  }\item[{const int}]{size }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{activation_8cu_a1d392980b831e51a4ccab5747d31acef_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{activation_8cu_a1d392980b831e51a4ccab5747d31acef_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,91 @@
+\doxysection{src/validation.cu File Reference}
+\hypertarget{validation_8cu}{}\label{validation_8cu}\index{src/validation.cu@{src/validation.cu}}
+{\ttfamily \#include "{}error\+\_\+checking.\+cuh"{}}\newline
+{\ttfamily \#include "{}validation.\+cuh"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{void}} \mbox{\hyperlink{validation_8cu_a969ac4eddfae39c9537db04ba0be0d72}{Correct\+Prediction\+Kernel}} (\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{const}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{predictions}}, \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{const}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{labels}}, \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{d\+\_\+correct\+Count}}, \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{batch\+Size}})
+\item 
+\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{void}} \mbox{\hyperlink{validation_8cu_ab3f9f9d06035f78c5989db8b7a01dafa}{Arg\+Max\+Kernel}} (\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{const}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{float}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{predictions}}, \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{output\+Labels}}, \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{const}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{num\+Classes}}, \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{const}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{batch\+Size}})
+\item 
+\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{float}} \mbox{\hyperlink{validation_8cu_a587df2a61036e8f22e5cb21694c8091e}{Compute\+Accuracy}} (\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{const}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{d\+\_\+predictions}}, \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{const}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{d\+\_\+labels}}, \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{batch\+Size}})
+\item 
+\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{void}} \mbox{\hyperlink{validation_8cu_aa6ffbe14c1a1a006abee7dfa874dbd73}{Arg\+Max}} (\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{const}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{float}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{d\+\_\+predictions}}, \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{d\+\_\+labels}}, \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{num\+Classes}}, \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{batch\+\_\+size}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{validation_8cu_aa6ffbe14c1a1a006abee7dfa874dbd73}\label{validation_8cu_aa6ffbe14c1a1a006abee7dfa874dbd73} 
+\index{validation.cu@{validation.cu}!ArgMax@{ArgMax}}
+\index{ArgMax@{ArgMax}!validation.cu@{validation.cu}}
+\doxysubsubsection{\texorpdfstring{ArgMax()}{ArgMax()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{void}} Arg\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{const}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{float}} \texorpdfstring{$\ast$}{*}}]{d\+\_\+predictions,  }\item[{\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \texorpdfstring{$\ast$}{*}}]{d\+\_\+labels,  }\item[{\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}}}]{num\+Classes,  }\item[{\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}}}]{batch\+\_\+size }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{validation_8cu_aa6ffbe14c1a1a006abee7dfa874dbd73_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{validation_8cu_ab3f9f9d06035f78c5989db8b7a01dafa}\label{validation_8cu_ab3f9f9d06035f78c5989db8b7a01dafa} 
+\index{validation.cu@{validation.cu}!ArgMaxKernel@{ArgMaxKernel}}
+\index{ArgMaxKernel@{ArgMaxKernel}!validation.cu@{validation.cu}}
+\doxysubsubsection{\texorpdfstring{ArgMaxKernel()}{ArgMaxKernel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{void}} Arg\+Max\+Kernel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{const}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{float}} \texorpdfstring{$\ast$}{*}}]{predictions,  }\item[{\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \texorpdfstring{$\ast$}{*}}]{output\+Labels,  }\item[{\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{const}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}}}]{num\+Classes,  }\item[{\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{const}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}}}]{batch\+Size }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{validation_8cu_ab3f9f9d06035f78c5989db8b7a01dafa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{validation_8cu_ab3f9f9d06035f78c5989db8b7a01dafa_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{validation_8cu_a587df2a61036e8f22e5cb21694c8091e}\label{validation_8cu_a587df2a61036e8f22e5cb21694c8091e} 
+\index{validation.cu@{validation.cu}!ComputeAccuracy@{ComputeAccuracy}}
+\index{ComputeAccuracy@{ComputeAccuracy}!validation.cu@{validation.cu}}
+\doxysubsubsection{\texorpdfstring{ComputeAccuracy()}{ComputeAccuracy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{float}} Compute\+Accuracy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{const}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \texorpdfstring{$\ast$}{*}}]{d\+\_\+predictions,  }\item[{\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{const}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \texorpdfstring{$\ast$}{*}}]{d\+\_\+labels,  }\item[{\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}}}]{batch\+Size }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{validation_8cu_a587df2a61036e8f22e5cb21694c8091e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{validation_8cu_a969ac4eddfae39c9537db04ba0be0d72}\label{validation_8cu_a969ac4eddfae39c9537db04ba0be0d72} 
+\index{validation.cu@{validation.cu}!CorrectPredictionKernel@{CorrectPredictionKernel}}
+\index{CorrectPredictionKernel@{CorrectPredictionKernel}!validation.cu@{validation.cu}}
+\doxysubsubsection{\texorpdfstring{CorrectPredictionKernel()}{CorrectPredictionKernel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{void}} Correct\+Prediction\+Kernel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{const}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \texorpdfstring{$\ast$}{*}}]{predictions,  }\item[{\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{const}} \mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \texorpdfstring{$\ast$}{*}}]{labels,  }\item[{\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}} \texorpdfstring{$\ast$}{*}}]{d\+\_\+correct\+Count,  }\item[{\mbox{\hyperlink{activation_8cu_a1d392980b831e51a4ccab5747d31acef}{int}}}]{batch\+Size }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{validation_8cu_a969ac4eddfae39c9537db04ba0be0d72_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{validation_8cu_a969ac4eddfae39c9537db04ba0be0d72_icgraph}
+\end{center}
+\end{figure}
